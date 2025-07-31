@@ -1,0 +1,12 @@
+{
+    "latex-workshop.formatting.latex-formatter": "none",
+    "editor.rulers": [100],
+    "editor.wordWrap": "wordWrapColumn",
+    "editor.wordWrapColumn": 100,
+    "editor.formatOnSave": false,
+    "[latex]": {
+        "editor.formatOnSave": false,
+        "editor.wordWrap": "wordWrapColumn",
+        "editor.wordWrapColumn": 100
+    }
+}

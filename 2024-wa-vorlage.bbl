@@ -1,0 +1,28 @@
+\begin{thebibliography}{Mas85}
+
+\bibitem[AB94]{ab94}
+Charalambos~D. Aliprantis and Kim~C. Border.
+\newblock {\em Infinite Dimensional Analysis}.
+\newblock Springer, Berlin, 1994.
+
+\bibitem[AH06]{ah2006}
+Gagan Aggarwal and Jason~D. Hartline.
+\newblock Knapsack auctions.
+\newblock In {\em Proceedings of the 17th Annual ACM-SIAM Symposium on Discrete Algorithms}, pages 1083--1092, New York, 2006. Association for Computing Machinery.
+
+\bibitem[Arr48]{arrow48}
+Kenneth~J. Arrow.
+\newblock The possibility of a universal social welfare function.
+\newblock Report P-41, RAND Corporation, 1948.
+
+\bibitem[Kaf05]{kaf12}
+Franz Kafka.
+\newblock {\em Die Verwandlung}.
+\newblock Anaconda Verlag, Köln, 2005.
+
+\bibitem[Mas85]{m85}
+Eric~S. Maskin.
+\newblock The theory of implementation in {N}ash equilibrium: a survey.
+\newblock In Leonid Hurwicz, David Schmeidler, and Hugo Sonnenschein, editors, {\em Social Goals and Social Organization}, pages 173--204. Cambridge University Press, Cambridge, 1985.
+
+\end{thebibliography}
