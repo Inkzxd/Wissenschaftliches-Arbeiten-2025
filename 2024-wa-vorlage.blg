@@ -4,44 +4,44 @@ The top-level auxiliary file: 2024-wa-vorlage.aux
 A level-1 auxiliary file: titleseite.aux
 The style file: alpha.bst
 Database file #1: literatur.bib
-You've used 5 entries,
+You've used 6 entries,
             2543 wiz_defined-function locations,
-            595 strings with 5136 characters,
-and the built_in function-call counts, 2004 in all, are:
-= -- 199
-> -- 73
+            588 strings with 5622 characters,
+and the built_in function-call counts, 1682 in all, are:
+= -- 167
+> -- 48
 < -- 6
-+ -- 23
-- -- 21
-* -- 118
-:= -- 322
-add.period$ -- 17
-call.type$ -- 5
-change.case$ -- 25
-chr.to.int$ -- 5
-cite$ -- 5
-duplicate$ -- 100
-empty$ -- 159
-format.name$ -- 29
-if$ -- 436
++ -- 12
+- -- 12
+* -- 67
+:= -- 279
+add.period$ -- 24
+call.type$ -- 6
+change.case$ -- 30
+chr.to.int$ -- 6
+cite$ -- 6
+duplicate$ -- 66
+empty$ -- 151
+format.name$ -- 24
+if$ -- 355
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 6
-newline$ -- 28
-num.names$ -- 17
-pop$ -- 34
+missing$ -- 0
+newline$ -- 39
+num.names$ -- 18
+pop$ -- 58
 preamble$ -- 1
-purify$ -- 32
+purify$ -- 36
 quote$ -- 0
-skip$ -- 81
+skip$ -- 56
 stack$ -- 0
-substring$ -- 101
-swap$ -- 25
+substring$ -- 42
+swap$ -- 6
 text.length$ -- 6
-text.prefix$ -- 3
+text.prefix$ -- 6
 top$ -- 0
-type$ -- 32
+type$ -- 48
 warning$ -- 0
-while$ -- 17
-width$ -- 6
-write$ -- 71
+while$ -- 12
+width$ -- 9
+write$ -- 85

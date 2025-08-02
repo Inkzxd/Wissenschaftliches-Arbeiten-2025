@@ -1,0 +1,8 @@
+# Multimodal Fusion Methods Performance Data
+# Method CRR_Accuracy Description
+FPV-Net 100.00 "Feature_Point_Verification_Network"
+CSAFM 99.79 "Cross_Scale_Attention_Fusion_Module"
+SF-Net 99.37 "Spatial_Fusion_Network"
+TC-Net 99.86 "Texture_Correlation_Network"
+MVCNN 99.72 "Multi_View_CNN"
+TSCNNF 100.00 "Two_Stage_CNN_Fusion"

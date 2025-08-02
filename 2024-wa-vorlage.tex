@@ -5,6 +5,8 @@
 \usepackage{graphicx}
 \usepackage[ngerman]{babel}
 \usepackage{amsmath}
+\usepackage{url}
+\usepackage{hyperref}
 \usepackage[a4paper,left=25mm,right=35mm,top=25mm,bottom=30mm]{geometry}
 \usepackage{parskip}
 	
@@ -78,13 +80,6 @@ Alltag deutlich – sowohl in Bezug auf Komfort als auch auf Sicherheit.
 
 \subsection{Grundlagen und Begriffe}
 
-% \begin{figure}[h]
-% \begin{center}
-%   \includegraphics[scale=0.35]{graphics/insects-5304085_640.png}
-%   \caption{Schmetterlinge}
-%   \label{schmetter}
-% \end{center}
-% \end{figure}
 Vor der Einführung der \textbf{Handflächenerkennung} durch WeChat gab es bereits 
 verschiedene biometrische und technologische Zahlungsmethoden, wie z. B. QR-Codes, 
 Fingerabdruck- und Gesichtserkennung. Jede dieser Methoden hatte jedoch ihre eigenen 
@@ -108,127 +103,197 @@ Gesichtserkennung & Kontaktlos, bequem & Lichtabhängig, Datenschutz \\
 \end{table}
 
 Angesichts dieser Herausforderungen bietet die \textbf{Handflächenerkennung} eine 
-vielversprechende Alternative, die mehr Stabilität und Genauigkeit verspricht.
+vielversprechende Alternative, die mehr Stabilität und Genauigkeit verspricht\cite{tang2022wechat}. 
+
+\vspace*{1.5cm}
 
 \subsection{Definitionen}
 \textbf{Biometrische Authentifizierung} bezeichnet die Überprüfung der Identität mithilfe 
 körperlicher Merkmale wie Fingerabdruck, Gesicht, Stimme oder Iris. Da diese Merkmale 
 individuell einzigartig sind, ermöglichen sie eine sichere Verifizierung der Identität 
-durch Geräte oder Systeme.
+durch Geräte oder Systeme \cite{geeksforgeeks2025palm}.
 
 \textbf{Handflächenerkennung} (Palm Print Recognition) ist ein biometrisches Verfahren, 
 das Venen, Linien und Oberflächenmuster der Hand analysiert, um eine eindeutige 
-Identifikation zu ermöglichen.
+Identifikation zu ermöglichen \cite{innovatrics2025palm}.
 
 \textbf{WeChat Handflächen-Zahlung} ist ein System von Tencent, das Handflächenerkennung 
-nutzt, um sichere und kontaktlose Zahlungen zu ermöglichen.
+nutzt, um sichere und kontaktlose Zahlungen zu ermöglichen \cite{tencent2024palm}.
+
+\vspace{2cm}
 
 \section{Analyse und Bewertung}
-Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean 
-imperdiet. Etiam ultricies nisi vel augue \cite{ab94}. Curabitur ullamcorper 
-ultricies nisi. Nam eget dui. 
-\begin{equation}
-  \sum_{n=0}^N g_n(x) = \sum\nolimits_{n=0}^N g_n(x) =
-  \int_a^b f(x) \,\mbox{d}x = \int\limits_a^b f(x) \,\mbox{d}x 
-\end{equation}
-Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam 
-semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, 
-blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante 
-\cite{ah2006} tincidunt tempus. Donec vitae sapien ut libero venenatis 
-faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. 
-Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. 
-Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis 
-gravida magna mi a libero. Fusce vulputate eleifend sapien.
 
-\subsection{Die Verwandlung}
-\glqq Jemand musste Josef K. verleumdet haben, denn ohne dass er etwas Böses 
-getan hätte, wurde er eines Morgens verhaftet. Wie ein Hund! sagte er, es 
-war, als sollte die Scham ihn überleben. Als Gregor Samsa eines Morgens aus 
-unruhigen Träumen erwachte, fand er sich in seinem Bett zu einem ungeheueren 
-Ungeziefer verwandelt. Und es war ihnen wie eine Bestätigung ihrer neuen 
-Träume und guten Absichten, als am Ziele ihrer Fahrt die Tochter als erste 
-sich erhob und ihren jungen Körper dehnte. Es ist ein eigentümlicher Apparat, 
-sagte der Offizier zu dem Forschungsreisenden und überblickte mit einem 
-gewissermaßen bewundernden Blick den Rest.\grqq \ (aus: \cite{kaf12})
+\subsection{Technische Funktionsweise}
+Die \textbf{WeChat-Handflächenerkennung} basiert auf einer innovativen doppelten 
+biometrischen Technologie, die zwei verschiedene Erkennungsverfahren kombiniert:
+
+\textbf{Duale Bilderfassung}: Das System nutzt sowohl Farbbilder als auch 
+Infrarotaufnahmen, um ein umfassendes biometrisches Profil zu erstellen. Diese 
+Kombination ermöglicht eine gleichzeitige Analyse verschiedener Handmerkmale:
+
+\begin{figure}[h]
+\begin{center}
+  \includegraphics[scale=0.35]{graphics/palm.png}
+  \caption{Handflächenerkennung}
+  \label{handfläche}
+\end{center}
+\end{figure}
+
+\begin{itemize}
+\item \textbf{Handlinien-Analyse (Palm Print)}: Digitale Erfassung der natürlichen 
+Linienführung und Oberflächenstruktur der Handfläche mittels hochauflösender 
+Farbkameras
+\item \textbf{Handvenenstruktur (Palm Vein)}: Infrarotscanner erfassen das 
+einzigartige Muster der Blutgefäße unter der Hautoberfläche
+\end{itemize}
+
+\textbf{Erweiterte Sicherheitsmerkmale}: WeChat verwendet zusätzliche 
+Verifikationsebenen zur Betrugsverhinderung:
+\begin{itemize}
+\item Erkennung künstlicher Hände oder Handabdrücke
+\item Verhinderung der Nutzung fremder Hände
+\item Unterscheidung selbst bei eineiigen Zwillingen möglich
+\item Bestätigung der physischen Anwesenheit und freiwilligen Durchführung
+\end{itemize}
+
+Die Kombination dieser Merkmale ermöglicht laut WeChat Pay eine 
+Erkennungsgenauigkeit von über 99,9\% und macht Fälschungen nahezu 
+unmöglich \cite{pan2024palm}. Der dreifache Sicherheitsansatz aus Handlinien, 
+Venenstruktur und Lebenderkennung stellt sicher, dass nur die berechtigte 
+Person selbst eine Transaktion durchführen kann.\cite{haoMiao2025wechat}
+
+\textbf{Fusion von Handlinien- und Handvenenmerkmalen}: Nachdem die Informationsgewichte $W_1$ und $W_2$ für die beiden Modalitäten Handlinien und Handvenen bestimmt wurden, wird $W_1$ als Gewicht mit der konvolutionellen Merkmalskarte $P_2$ der Handlinienbilder multipliziert, um $P_3$ zu erhalten. Ebenso wird $W_2$ mit der konvolutionellen Merkmalskarte $V_2$ der Handvenenbilder multipliziert, um $V_3$ zu erhalten. Dieser Vorgang wird durch die folgenden Gleichungen beschrieben:
+
+
+\begin{equation}
+P_3 = W_1 \cdot P_2,\quad V_3 = W_2 \cdot V_2
+\end{equation}
+
+Mit dieser flexiblen Fusionsmethode kann das Modell besser auf Unterschiede zwischen den einzelnen Erkennungsmerkmalen und auf unterschiedliche Bildqualitäten reagieren. Dadurch entsteht eine stabilere und zuverlässigere gemeinsame Merkmalsdarstellung. Im nächsten Schritt werden die Merkmalskarten $P_3$ (Handlinien) und $V_3$ (Handvenen) einfach zusammengefügt, sodass die endgültige Merkmalskarte $Z$ entsteht. Die entsprechende Formel lautet:
+
+\begin{equation}
+Z = \text{Concate}[P_3, V_3]
+\end{equation}
+Das Wort $Concate$ steht hier für das Verketten der beiden Merkmalskarten. Die so entstandene konvolutionelle Merkmalskarte $Z$ wird anschließend in eine vollständig verbundene Schicht weitergeleitet, um die Identität zu bestimmen. Für die Bewertung des Netzwerks wird die sogenannte Kreuzentropie-Verlustfunktion verwendet, die wie folgt berechnet wird:
+
+\begin{equation}
+L_{\text{CLS}} = -\sum_{i=1}^{k} y_i \cdot \log(q_i')
+\end{equation}
+
+Hierbei bezeichnet $q$ das Klassifikationsergebnis, das nach der Einspeisung der konvolutionellen Merkmalskarte $Z$ in die vollständig verbundene Schicht erhalten wird. Das Label $y$ gibt die tatsächliche Klasse der multimodalen konvolutionellen Merkmalskarte $Z$ an.
+
+Die Gesamtverlustfunktion des Netzwerkrahmens wird wie folgt berechnet:
+
+\begin{equation}
+L = \lambda_1 \cdot L_1 + \lambda_2 \cdot L_{m}^{ZF} + \lambda_3 \cdot L_{\text{CLS}}
+\end{equation}
+
+Hier sind $\lambda_1$, $\lambda_2$, $\lambda_3$ Hyperparameter, die die einzelnen Verlustfunktionen gewichten.
+
+Durch diese mathematische Struktur kann das System Personen sehr zuverlässig und sicher erkennen, sodass Fälschungen praktisch ausgeschlossen sind.\cite{pan2024palm}
+
+\vspace{1.5cm}
+
+\subsection{Herausforderungen und Limitationen}
+Trotz der modernen Technik hat die WeChat-Handflächenerkennung einige Herausforderungen:
+
+\textbf{Teure Hardware}: Das System braucht spezielle Geräte mit besonderen 
+Kameras. Normale Handys können nicht benutzt werden. Die Technik ist teuer.
+
+\textbf{Schwierige Anmeldung}: Neue Nutzer müssen ihre Hand registrieren. 
+Das dauert länger als bei QR-Codes.
+
+\textbf{Datenschutz-Probleme}: Das System speichert Körperdaten, die sehr sensible sind. 
+Viele Menschen haben Angst vor Missbrauch.
+
+\vspace{1.5cm}
+
+
+
+\vspace{2cm}
 
 \section{Ergebnisse und Diskussion}
-Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam 
-accumsan lorem in dui. Cras ultricies mi eu turpis hendrerit fringilla. 
-Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere 
-cubilia Curae; In ac dui quis mi consectetuer lacinia. Nam pretium turpis et 
-arcu. Duis arcu tortor, suscipit eget, imperdiet nec, imperdiet iaculis, 
-ipsum. Sed aliquam ultrices mauris. Integer \cite{m85} ante arcu, accumsana, 
-consectetuer eget, posuere ut, mauris. Praesent adipiscing. Phasellus 
-ullamcorper ipsum rutrum nunc. Nunc nonummy metus. Vestibulum volutpat 
-pretium libero. Cras id dui. Aenean ut eros et nisl sagittis vestibulum. 
-Nullam nulla eros, ultricies sit amet, nonummy id, imperdiet feugiat, pede.
+
+\subsection{Experimentelle Validierung der Fusionsmethoden}
+Zur Überprüfung der vorgestellten Methoden wurden verschiedene multimodale Fusionsalgorithmen in praktischen Tests verglichen. Die Resultate zeigen, dass moderne Fusionsverfahren besonders zuverlässig und leistungsfähig sind.
+
+\begin{figure}[h!]
+\begin{center}
+  \includegraphics[width=0.7\textwidth]{graphics/fusion_algorithms_comparison.png}
+  \caption{Vergleich verschiedener Fusionsalgorithmen}
+  \label{fig:fusion-comparison}
+\end{center}
+\end{figure}
+
+Abbildung \ref{fig:fusion-comparison} zeigt die Ergebnisse verschiedener Fusionsmethoden. Besonders die FPV-Net- und TSCNNF-Methoden erreichen eine sehr hohe Erkennungsrate von 100\% . Dies bestätigt, dass der kombinierte Ansatz besser funktioniert als einzelne Verfahren.\cite{pan2024palm}
+
+\vspace{1.5cm}
+
+\subsection{Leistungsvergleich mit bestehenden Systemen}
+Im Vergleich zu traditionellen Zahlungsmethoden hat die Handflächenerkennung mehrere klare Vorteile. Sie ist besonders sicher, da sie schwer zu fälschen ist. Außerdem funktioniert sie kontaktlos, was hygienischer ist und schneller abläuft. Die folgende Tabelle zeigt die wichtigsten Unterschiede zu anderen biometrischen Verfahren:
+
+\begin{table}[!htb]
+\centering
+\begin{tabular}{|l|c|c|c|}
+\hline
+\textbf{Kriterium} & \textbf{Handflächen} & \textbf{Fingerabdruck} & \textbf{Gesicht} \\
+\hline
+Genauigkeit & 99,9\% & 95-98\% & 92-96\% \\
+\hline
+Kontaktlos & Ja & Nein & Ja \\
+\hline
+Hygienisch & Sehr gut & Problematisch & Gut \\
+\hline
+Fälschungsresistenz & Sehr hoch & Mittel & Niedrig-Mittel \\
+\hline
+Lichtabhängigkeit & Gering & Keine & Hoch \\
+\hline
+Geschwindigkeit & 0,3-0,5s & 0,5-1s & 1-2s \\
+\hline
+Hardware-Kosten & Hoch & Niedrig & Mittel \\
+\hline
+Datenschutz & Mittel & Gut & Problematisch \\
+\hline
+\end{tabular}
+\caption{Leistungsvergleich biometrischer Erkennungsverfahren}
+\label{tab:biometric-comparison}
+\end{table}
+
+Wie in Tabelle \ref{tab:biometric-comparison} zu sehen ist, schneidet die \textbf{Handflächenerkennung} bei fast allen Kriterien besser ab als andere biometrische Verfahren. Besonders wichtig sind die sehr hohe Erkennungsgenauigkeit (99,9\%) und die kontaktlose Nutzung, die für mehr Sicherheit und Hygiene sorgen.
+
+
+\vspace{2cm}
 
 \section{Fazit und Schlussfolgerungen}
-Sed lectus. Donec mollis hendrerit risus. Phasellus nec sem in justo 
-pellentesque facilisis. Etiam imperdiet imperdiet orci. Nunc nec neque. 
-Phasellus leo dolor, tempus non, auctor et, hendrerit quis, nisi. Curabitur 
-ligula sapien, tincidunt non, euismod vitae \cite{arrow48}, posuere 
-imperdiet, leo. Maecenas malesuada. Praesent congue erat at massa. Sed cursus 
-turpis vitae tortor. Donec posuere vulputate arcu. Phasellus accumsan cursus 
-velit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices 
-posuere cubilia Curae; 
-\begin{table}[h]
-\begin{center}
-  \begin{tabular}{ |c|c|c| } 
-    \hline
-    Primzahlen & Tiere & Werkzeuge \\ 
-    \hline
-    17 & Elefant    & Schraubenzieher \\ 
-    23 & Stechmücke & Zange \\ 
-    \hline
-  \end{tabular}
-    \caption{Beispiel}
-\end{center}
-\end{table}
-Sed aliquam, nisi quis porttitor congue, elit erat euismod orci, ac placerat 
-dolor lectus quis orci. Phasellus consectetuer vestibulum elit. Aenean tellus 
-metus, bibendum sed, posuere ac, mattis non, nunc. Vestibulum fringilla pede 
-sit amet augue. In turpis. Pellentesque posuere. Praesent turpis. Aenean 
-posuere, tortor sed cursus feugiat, nunc augue blandit nunc, eu sollicitudin 
-urna dolor sagittis lacus (siehe Abbildung \ref{schmetter}). Donec elit 
-libero, sodales nec, volutpat a, suscipit non, turpis. Nullam sagittis. 
-Suspendisse pulvinar, augue ac venenatis condimentum, sem libero volutpat 
-nibh, nec pellentesque velit pede quis nunc. Vestibulum ante ipsum primis in 
-faucibus orci luctus et ultrices posuere cubilia Curae; Fusce id purus. Ut 
-varius tincidunt libero. Phasellus dolor. Maecenas vestibulum mollis
+Die WeChat-Handflächenerkennung stellt einen bedeutenden Fortschritt in der biometrischen Zahlungstechnologie dar. Die duale Erfassung von Handlinien und Handvenen erreicht eine Erkennungsgenauigkeit von 99,9\% und übertrifft damit etablierte Methoden deutlich.
+
+Die wichtigsten Erkenntnisse dieser Arbeit:
+
+\textbf{Technische Überlegenheit}: Die multimodale Fusionstechnik kombiniert erfolgreich verschiedene biometrische Merkmale und erreicht höchste Sicherheitsstandards.
+
+\textbf{Praktische Vorteile}: Kontaktlose Bedienung, schnelle Transaktionszeiten (0,3-0,5s) und hohe Hygienestands machen das System besonders attraktiv.
+
+\textbf{Herausforderungen}: Hohe Hardware-Kosten und Datenschutzbedenken stellen noch Hindernisse für eine breite Einführung dar.
+
+Die Handflächenerkennung zeigt großes Potenzial für die Zukunft des digitalen Bezahlens, insbesondere in öffentlichen Bereichen mit hohem Durchsatz.
+
+\vspace{1.5cm}
 
 \subsection{Offene Fragen}
-Li Europan lingues es membres del sam familie. Lor separat existentie es un 
-myth. Por scientie, musica, sport etc, litot Europa usa li sam vocabular. Li 
-lingues differe solmen in li grammatica, li pronunciation e li plu commun 
-vocabules. Omnicos directe al desirabilite de un nov lingua franca: On refusa 
-continuar payar custosi traductores.
+\begin{itemize}
+  \item Wie kann die Technologie kostengünstiger und für mobile Geräte verfügbar gemacht werden?
+  \item Welche rechtlichen Standards sind für biometrische Zahlungssysteme erforderlich?
+  \item Wie entwickelt sich die gesellschaftliche Akzeptanz dieser Technologie?
+  \item Welche Langzeiteffekte haben Hautveränderungen auf die Erkennungsqualität?
+\end{itemize}
 
-At solmen va esser necessi far uniform grammatica, pronunciation e plu sommun 
-paroles. Ma quande lingues coalesce, li grammatica del resultant lingue es 
-plu simplic e regulari quam ti del coalescent lingues. Li nov lingua franca 
-va esser plu simplic e regulari quam li existent Europan lingues. It va esser 
-tam simplic quam Occidental in fact, it va esser Occidental. A un Angleso it 
-va semblar un simplificat Angles, quam un skeptic Cambridge amico dit me que 
-Occidental es. Li Europan lingues es membres del sam familie. Lor separat 
-existentie es un myth. Por scientie, musica,
+\vspace{1.5cm}
 
 \subsection{Diskussion}
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo 
-ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis 
-parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, 
-pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec 
-pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.
+Die Innovation von WeChat zeigt, wie zukünftige Zahlungssysteme aussehen könnten. Damit sich diese Technik wirklich durchsetzt, müssen nicht nur die technischen Vorteile überzeugen, sondern auch die gesellschaftlichen und wirtschaftlichen Aspekte berücksichtigt werden.
 
-In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum 
-felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus 
-elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, 
-porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus 
-in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius 
-laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. 
-Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas 
-tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet 
-adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar.
+Künftige Forschung sollte darauf abzielen, die Kosten zu senken und den Datenschutz weiter zu verbessern, damit diese moderne Technologie für möglichst viele Menschen nutzbar wird.
 
 % Hier beginnt das Literaturverzeichnis
 \clearpage
@@ -236,27 +301,6 @@ adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar.
 \bibliographystyle{alpha}
 \bibliography{literatur}
 \addcontentsline{toc}{section}{Literaturverzeichnis}
-
-
-% Hier beginnt der Anhang
-\clearpage
-\appendix
-\part*{Anhang}
-\addcontentsline{toc}{section}{Anhang}
-
-\section{Datenmaterial}
-Li Europan lingues es membres del sam familie. Lor separat existentie es un 
-myth. Por scientie, musica, sport etc, litot Europa usa li sam vocabular. Li 
-lingues differe solmen in li grammatica, li pronunciation e li plu commun 
-vocabules.
-
-\section{Web-Standards}
-Omnicos directe al desirabilite de un nov lingua franca: On refusa continuar 
-payar custosi traductores. At solmen va esser necessi far uniform grammatica, 
-pronunciation e plu sommun paroles. Ma quande lingues coalesce, li grammatica 
-del resultant lingue es plu simplic e regulari quam ti del coalescent 
-lingues. Li nov lingua franca va esser plu simplic e regulari quam li 
-existent Europan
 
 \end{document}
 

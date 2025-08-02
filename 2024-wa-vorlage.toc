@@ -1,15 +1,15 @@
 \babel@toc {ngerman}{}\relax 
-\contentsline {section}{\numberline {1}Einleitung}{1}{}%
-\contentsline {subsection}{\numberline {1.1}Grundlagen und Begriffe}{1}{}%
-\contentsline {subsection}{\numberline {1.2}Definitionen}{1}{}%
-\contentsline {section}{\numberline {2}Analyse und Bewertung}{1}{}%
-\contentsline {subsection}{\numberline {2.1}Die Verwandlung}{2}{}%
-\contentsline {section}{\numberline {3}Ergebnisse und Diskussion}{2}{}%
-\contentsline {section}{\numberline {4}Fazit und Schlussfolgerungen}{2}{}%
-\contentsline {subsection}{\numberline {4.1}Offene Fragen}{3}{}%
-\contentsline {subsection}{\numberline {4.2}Diskussion}{3}{}%
-\contentsline {section}{Literaturverzeichnis}{5}{}%
-\contentsline {section}{Anhang}{6}{}%
-\contentsline {section}{\numberline {A}Datenmaterial}{6}{}%
-\contentsline {section}{\numberline {B}Web-Standards}{6}{}%
+\contentsline {section}{\numberline {1}Einleitung}{1}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Grundlagen und Begriffe}{1}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Definitionen}{1}{subsection.1.2}%
+\contentsline {section}{\numberline {2}Analyse und Bewertung}{2}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Technische Funktionsweise}{2}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Herausforderungen und Limitationen}{3}{subsection.2.2}%
+\contentsline {section}{\numberline {3}Ergebnisse und Diskussion}{4}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Experimentelle Validierung der Fusionsmethoden}{4}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Leistungsvergleich mit bestehenden Systemen}{5}{subsection.3.2}%
+\contentsline {section}{\numberline {4}Fazit und Schlussfolgerungen}{5}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Offene Fragen}{6}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Diskussion}{6}{subsection.4.2}%
+\contentsline {section}{Literaturverzeichnis}{7}{section*.4}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

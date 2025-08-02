@@ -1,0 +1,8 @@
+# Fusion Algorithm Performance Data
+# Method CRR_Accuracy
+FPV-Net 100.00
+CSAFM 99.79
+SF-Net 99.37
+TC-Net 99.86
+MVCNN 99.72
+TSCNNF 100.00
