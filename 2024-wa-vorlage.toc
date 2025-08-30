@@ -12,4 +12,7 @@
 \contentsline {subsection}{\numberline {4.1}Offene Fragen}{6}{subsection.4.1}%
 \contentsline {subsection}{\numberline {4.2}Diskussion}{6}{subsection.4.2}%
 \contentsline {section}{Literaturverzeichnis}{7}{section*.4}%
+\contentsline {section}{Anhang}{8}{part*.6}%
+\contentsline {section}{\numberline {A}GNUplot-code}{8}{appendix.A}%
+\contentsline {section}{\numberline {B}Website Ressourcen}{8}{appendix.B}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

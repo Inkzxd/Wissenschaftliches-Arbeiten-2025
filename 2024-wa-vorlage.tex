@@ -9,7 +9,16 @@
 \usepackage{hyperref}
 \usepackage[a4paper,left=25mm,right=35mm,top=25mm,bottom=30mm]{geometry}
 \usepackage{parskip}
-	
+\usepackage{listings}
+\usepackage{color}
+
+\lstset{
+    basicstyle=\ttfamily\small,
+    frame=single,
+    breaklines=true,
+    language=,
+    captionpos=b
+}
 
 \begin{document}
 
@@ -21,14 +30,7 @@
 
 % Hier ist der Abstract
 \section*{Abstract}
-Kurze Zusammenfassung des Inhaltes in deutscher Sprache, der Umfang beträgt 
-zwischen einer halben und einer ganzen DIN A4-Seite.
-
-Zwei flinke Boxer jagen die quirlige Eva und ihren Mops durch Sylt. Franz 
-jagt im komplett verwahrlosten Taxi quer durch Bayern. Zwölf Boxkämpfer jagen 
-Viktor quer über den großen Sylter Deich. Vogel Quax zwickt Johnys Pferd Bim.
-
-Sylvia und ihr Mops Eva jagen zwölf Boxkämpfer quer über den großen Sylter Deich.
+In dieser Arbeit wird die neue Handflächenerkennung von WeChat vorgestellt und bewertet. Die Technologie nutzt die Linien und Venen der Hand, um Zahlungen sicher und ohne Berührung durchzuführen. Die Handflächenerkennung ist sicherer, schneller und hygienischer als andere Methoden wie QR-Code, Fingerabdruck oder Gesichtserkennung.
 
 
 \newpage
@@ -63,19 +65,13 @@ Xudong Zhang
 \clearpage
 \pagenumbering{arabic}
 
-% Hier beginnt das erste Kapitel
+
 \section{Einleitung}
-Physische Karten können leicht verloren gehen. Beim mobilen Bezahlen kommt es 
-vor, dass der Akku des Smartphones leer ist. In Zeiten von Grippewellen kann 
-die Nutzung von Fingerabdruckscannern zudem hygienische Risiken mit sich 
-bringen.
+Physische Karten können leicht verloren gehen. Beim mobilen Bezahlen kommt es vor, dass der Akku des Smartphones leer ist. In Zeiten von Grippewellen kann die Nutzung von Fingerabdruckscannern zudem hygienische Risiken mit sich bringen.\cite{tencent2024article}
 
-Heute gibt es jedoch eine neue Entwicklung im Bereich des Bezahlens: Eine 
-einfache Handbewegung genügt, um eine Zahlung oder Identitätsprüfung 
-durchzuführen und einen Dienst zu nutzen.
+Heute gibt es jedoch eine neue Entwicklung im Bereich des Bezahlens: Eine einfache Handbewegung genügt, um eine Zahlung oder Identitätsprüfung durchzuführen und einen Dienst zu nutzen.
 
-Die von \textbf{WeChat} eingeführte innovative Handflächenerkennung verbessert den 
-Alltag deutlich – sowohl in Bezug auf Komfort als auch auf Sicherheit.
+Die Handflächenerkennung, die von \textbf{WeChat} eingeführt wurde, verbessert den Alltag deutlich. Sie erhöht sowohl den Komfort als auch die Sicherheit.
 
 
 \subsection{Grundlagen und Begriffe}
@@ -102,23 +98,17 @@ Gesichtserkennung & Kontaktlos, bequem & Lichtabhängig, Datenschutz \\
 \label{tab:zahlungsmethoden}
 \end{table}
 
-Angesichts dieser Herausforderungen bietet die \textbf{Handflächenerkennung} eine 
-vielversprechende Alternative, die mehr Stabilität und Genauigkeit verspricht\cite{tang2022wechat}. 
+Die \textbf{Handflächenerkennung} bietet eine Lösung für diese Herausforderungen.
+Eine vielversprechende Alternative, die genauer und stabiler ist.\cite{tang2022wechat}. 
 
 \vspace*{1.5cm}
 
 \subsection{Definitionen}
-\textbf{Biometrische Authentifizierung} bezeichnet die Überprüfung der Identität mithilfe 
-körperlicher Merkmale wie Fingerabdruck, Gesicht, Stimme oder Iris. Da diese Merkmale 
-individuell einzigartig sind, ermöglichen sie eine sichere Verifizierung der Identität 
-durch Geräte oder Systeme \cite{geeksforgeeks2025palm}.
+\textbf{Biometrische Authentifizierung} heißt, dass die Identität anhand von körperlichen Merkmalen wie Fingerabdruck, Gesicht, Stimme oder Iris überprüft wird. Weil diese Merkmale bei jedem Menschen anders sind, können sie benutzt werden, um die Identität einer Person zu überprüfen. \cite{geeksforgeeks2025palm}
 
-\textbf{Handflächenerkennung} (Palm Print Recognition) ist ein biometrisches Verfahren, 
-das Venen, Linien und Oberflächenmuster der Hand analysiert, um eine eindeutige 
-Identifikation zu ermöglichen \cite{innovatrics2025palm}.
+\textbf{Handflächenerkennung} ist ein Verfahren, das die Hand scannt, um ein eindeutiges Muster zu finden. Es soll eine Identifikation ermöglicht werden. \cite{innovatrics2025palm}
 
-\textbf{WeChat Handflächen-Zahlung} ist ein System von Tencent, das Handflächenerkennung 
-nutzt, um sichere und kontaktlose Zahlungen zu ermöglichen \cite{tencent2024palm}.
+\textbf{WeChat Handflächen-Zahlung}  ist ein System von Tencent. Es erkennt die Handflächen der Nutzer und ermöglicht so sichere und kontaktlose Zahlungen. \cite{tencent2024palm}
 
 \vspace{2cm}
 
@@ -216,7 +206,7 @@ Viele Menschen haben Angst vor Missbrauch.
 \section{Ergebnisse und Diskussion}
 
 \subsection{Experimentelle Validierung der Fusionsmethoden}
-Zur Überprüfung der vorgestellten Methoden wurden verschiedene multimodale Fusionsalgorithmen in praktischen Tests verglichen. Die Resultate zeigen, dass moderne Fusionsverfahren besonders zuverlässig und leistungsfähig sind.
+Um die vorgestellten Methoden zu überprüfen, wurden verschiedene multimodale Fusionsalgorithmen in praktischen Tests miteinander verglichen. Die Ergebnisse zeigen, dass moderne Fusionsverfahren besonders zuverlässig und leistungsfähig sind.
 
 \begin{figure}[h!]
 \begin{center}
@@ -226,12 +216,12 @@ Zur Überprüfung der vorgestellten Methoden wurden verschiedene multimodale Fus
 \end{center}
 \end{figure}
 
-Abbildung \ref{fig:fusion-comparison} zeigt die Ergebnisse verschiedener Fusionsmethoden. Besonders die FPV-Net- und TSCNNF-Methoden erreichen eine sehr hohe Erkennungsrate von 100\% . Dies bestätigt, dass der kombinierte Ansatz besser funktioniert als einzelne Verfahren.\cite{pan2024palm}
+Abbildung \ref{fig:fusion-comparison} zeigt die Ergebnisse verschiedener Fusionsmethoden. Besonders die FPV-Net und TSCNNF erreichen eine sehr hohe Erkennungsrate von 100\%. Dadurch wird bestätigt, dass der kombinierte Ansatz besser funktioniert als einzelne Verfahren.\cite{pan2024palm}
 
 \vspace{1.5cm}
 
 \subsection{Leistungsvergleich mit bestehenden Systemen}
-Im Vergleich zu traditionellen Zahlungsmethoden hat die Handflächenerkennung mehrere klare Vorteile. Sie ist besonders sicher, da sie schwer zu fälschen ist. Außerdem funktioniert sie kontaktlos, was hygienischer ist und schneller abläuft. Die folgende Tabelle zeigt die wichtigsten Unterschiede zu anderen biometrischen Verfahren:
+Im Vergleich zu traditionellen Zahlungsmethoden hat die Handflächenerkennung mehrere klare Vorteile. Sie ist besonders sicher, da sie nur schwer zu fälschen ist. Außerdem funktioniert sie kontaktlos, was hygienischer ist und schneller geht. Die folgende Tabelle zeigt die wichtigsten Unterschiede zu anderen biometrischen Verfahren:
 
 \begin{table}[!htb]
 \centering
@@ -260,23 +250,23 @@ Datenschutz & Mittel & Gut & Problematisch \\
 \label{tab:biometric-comparison}
 \end{table}
 
-Wie in Tabelle \ref{tab:biometric-comparison} zu sehen ist, schneidet die \textbf{Handflächenerkennung} bei fast allen Kriterien besser ab als andere biometrische Verfahren. Besonders wichtig sind die sehr hohe Erkennungsgenauigkeit (99,9\%) und die kontaktlose Nutzung, die für mehr Sicherheit und Hygiene sorgen.
+In der Tabelle \ref{tab:biometric-comparison} sieht man, dass die \textbf{Handflächenerkennung} bei fast allen Kriterien besser ist als andere biometrische Verfahren. Besonders wichtig sind die sehr hohe Erkennungsgenauigkeit (99,9\%) und die kontaktlose Nutzung, die für mehr Sicherheit und Hygiene sorgen.
 
 
 \vspace{2cm}
 
 \section{Fazit und Schlussfolgerungen}
-Die WeChat-Handflächenerkennung stellt einen bedeutenden Fortschritt in der biometrischen Zahlungstechnologie dar. Die duale Erfassung von Handlinien und Handvenen erreicht eine Erkennungsgenauigkeit von 99,9\% und übertrifft damit etablierte Methoden deutlich.
+Die Handflächenerkennung von WeChat stellt einen bedeutenden Fortschritt in der biometrischen Zahlungstechnologie dar. Die duale Erfassung von Handlinien und Handvenen erreicht eine Erkennungsgenauigkeit von 99,9\% und übertrifft damit etablierte Methoden deutlich.
 
 Die wichtigsten Erkenntnisse dieser Arbeit:
 
 \textbf{Technische Überlegenheit}: Die multimodale Fusionstechnik kombiniert erfolgreich verschiedene biometrische Merkmale und erreicht höchste Sicherheitsstandards.
 
-\textbf{Praktische Vorteile}: Kontaktlose Bedienung, schnelle Transaktionszeiten (0,3-0,5s) und hohe Hygienestands machen das System besonders attraktiv.
+\textbf{Praktische Vorteile}: Kontaktlose Bedienung, schnelle Transaktionszeiten (0,3-0,5s) und hohe Hygienestandards machen das System besonders attraktiv.
 
-\textbf{Herausforderungen}: Hohe Hardware-Kosten und Datenschutzbedenken stellen noch Hindernisse für eine breite Einführung dar.
+\textbf{Herausforderungen}: Hohe Hardwarekosten und Datenschutzbedenken stellen noch immer Hindernisse für eine breite Einführung dar.
 
-Die Handflächenerkennung zeigt großes Potenzial für die Zukunft des digitalen Bezahlens, insbesondere in öffentlichen Bereichen mit hohem Durchsatz.
+Die Handflächenerkennung hat großes Potenzial. Und zwar für die Zukunft des digitalen Bezahlens. Insbesondere in öffentlichen Bereichen mit hohem Durchsatz.
 
 \vspace{1.5cm}
 
@@ -291,9 +281,9 @@ Die Handflächenerkennung zeigt großes Potenzial für die Zukunft des digitalen
 \vspace{1.5cm}
 
 \subsection{Diskussion}
-Die Innovation von WeChat zeigt, wie zukünftige Zahlungssysteme aussehen könnten. Damit sich diese Technik wirklich durchsetzt, müssen nicht nur die technischen Vorteile überzeugen, sondern auch die gesellschaftlichen und wirtschaftlichen Aspekte berücksichtigt werden.
+Die Innovation von WeChat zeigt, wie zukünftige Zahlungssysteme aussehen könnten. Damit sich diese Technik wirklich durchsetzt, müssen nicht nur die technischen Vorteile überzeugen, sondern auch die gesellschaftlichen und wirtschaftlichen Aspekte.
 
-Künftige Forschung sollte darauf abzielen, die Kosten zu senken und den Datenschutz weiter zu verbessern, damit diese moderne Technologie für möglichst viele Menschen nutzbar wird.
+Künftige Forschung sollte darauf abzielen, die Kosten zu senken. Außerdem sollte sie den Datenschutz weiter verbessern. So wird diese moderne Technologie für möglichst viele Menschen nutzbar.
 
 % Hier beginnt das Literaturverzeichnis
 \clearpage
@@ -302,5 +292,55 @@ Künftige Forschung sollte darauf abzielen, die Kosten zu senken und den Datensc
 \bibliography{literatur}
 \addcontentsline{toc}{section}{Literaturverzeichnis}
 
-\end{document}
 
+\clearpage
+\appendix
+\part*{Anhang}
+\addcontentsline{toc}{section}{Anhang}
+
+\section{GNUplot-code}
+\begin{lstlisting}[caption={Gnuplot-Skript für Fusionsalgorithmen}]
+#!/usr/bin/gnuplot
+
+# Set terminal and output
+set terminal pngcairo enhanced font "Arial,12" size 800,600
+set output "graphics/fusion_algorithms_comparison.png"
+
+# Set title and labels
+set title "Vergleich verschiedener Fusionsalgorithmen" font "Arial,14"
+set ylabel "Korrekte Erkennungsrate (%)" font "Arial,12"
+set xlabel "" font "Arial,12"
+
+# Set y-axis range to focus on the differences
+set yrange [99:100.2]
+
+# Set grid
+set grid y
+
+# Set bar chart style
+set style fill solid 0.7 border -1
+set boxwidth 0.6
+
+# Set x-axis labels
+set xtics rotate by -45 font "Arial,11"
+
+# Set colors for different performance levels
+set style data histograms
+set style histogram cluster gap 1
+
+# Define color palette: purple for 100%, blue for high performance, teal for good, orange for lower
+plot 'fusion_data.dat' using 2:xtic(1) with boxes \
+     lc rgb "#9966CC" title "Erkennungsgenauigkeit"
+\end{lstlisting}
+
+
+\section{Website Ressourcen}
+
+\begin{itemize}
+  \item \url{https://www.gnuplot.info/} - Offizielle GNUplot-Website
+  \item \url{http://www.gnuplotting.org/} - GNUplot Tutorials und Beispiele
+  \item \url{https://www.overleaf.com/} - Online LaTeX Editor
+  \item \url{https://www.deepl.com/} - Deepl Übersetzungsdienst
+\end{itemize}
+
+\end{document}
